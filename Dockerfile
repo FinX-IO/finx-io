@@ -9,5 +9,5 @@ COPY . .
 #RUN npx browserslist@latest --update-db
 #RUN yarn install && yarn build
 RUN pwd && ls -alt
-RUN yarn && yarn start
+RUN cd finx-io && yarn && yarn start
 ## install PORTIS

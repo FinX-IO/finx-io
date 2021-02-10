@@ -1,7 +1,7 @@
 # Name the node stage "builder"
 FROM node:12 AS builder
 # Set working directory
-WORKDIR /finx-io
+WORKDIR /finx-io/finx-io
 # WORKDIR /app
 # Copy all files from current directory to working dir in image
 COPY . .

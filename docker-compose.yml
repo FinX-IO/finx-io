@@ -4,6 +4,17 @@ version: '3'
 volumes:
   node-modules:
 services:
+  # nginx
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+    ports:
+      - "80:8000"
+    expose:
+      - "80"
   # React frontend
   finx-io:
     build:
@@ -23,14 +34,3 @@ services:
       - "3000:3000"
     expose:
       - "3000"
-  # nginx
-  nginx:
-    image: nginx:latest
-    hostname: nginx
-    container_name: nginx
-    volumes:
-      - ./nginx/:/etc/nginx/conf.d
-    ports:
-      - "80:8000"
-    expose:
-      - "80"

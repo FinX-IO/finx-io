@@ -1,15 +1,44 @@
 ---
-title: Understanding Returns
+title: Liquidity Provider Rewards
 tags: pools, documentation
 ---
 
-Uniswap incentivizes users to add liquidity to trading pools by rewarding providers with the fees generated when other users trade with those pools. Market making, in general, is a complex activity. There is a risk of losing money during large and sustained movement in the underlying asset price compared to simply holding an asset.
+FINX provides a set of incentives for Liquidity Providers, Debt Service Providers  and 
+Stakeholders to provide liquidity to FINX Pools.
+
+FINX Liquidity Providers and Debt Services providers collectively serve as Decentralized Market Makers, which is a complex 
+undertaking that requires understanding of the risks involved.
+
+# Reward Architecture
+
+The primary purpose of the Rewards is to encourage a Token Capital Adequacy. The survival of the 
+ecosystem relies on two primary requirements: 1) 24/7 liquidity to execute swaps; and 
+2) the ability to view and understand volatility between tokens.
+
+The Reward Architecture links the tokens that underpin the ecosystem, and deposits them in swappable 
+pairs in locked pools. The goal is to reach both the minimum levels of tokenization required to perform tasks on 
+the ecosystem, and also create a baseline for value in the system as a whole.
+
+## How Rewards Work
+
+Rewards are generated when an eligible token is 'staked' in an account that exists for the purpose of 
+recording and generating them. The user (Liquidity Provider, Debt Service Provider, Stakeholder, or 
+Borrower) deposits tokens into the stake account and receives stake-tokens in return. The 
+holder of the stake-tokens can then redeem them later in exchange for their balance in the stake account 
+as per the rules of the particular token stake program.
+
+While the staked tokens are in the stake account, they generate rewards. Generally speaking, rewards are 
+generated in the same token-denomination as the deposited stake, but this is not always the case. It is possible 
+for special classes of tokens to be generated as rewards for specific use cases.
+
+When the user wishes to unstake, they swap the staked-tokens for the originally deposited tokens plus the rewards
+that accumulated during the staking period.
 
 # Risks
 
 To understand the risks associated with providing liquidity you can read [https://medium.com/@pintail/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2](https://medium.com/@pintail/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2) to get an in-depth look at how to conceptualize a liquidity position.
 
-# Example from the article
+# Excerpt from Risk Article
 
 <blockquote>
 

@@ -3,6 +3,12 @@ title: API Overview
 tags: api, documentation
 ---
 
+We are working towards establishing a FINX Subgraph. 
+
+Information on interaction with the FINX Subgraph will be posted here when complete.
+
+For information on the Uniswap V2 Subgraph, see below.
+
 This section explains the Uniswap Subgraph and how to interact with it. The Uniswap subgraph indexes data from the Uniswap contracts over time. It organizes data about pairs, tokens, Uniswap as a whole, and more. The subgraph updates any time a transaction is made on Uniswap. The subgraph runs on [The Graph](https://thegraph.com/) protocol's hosted service and can be openly queried.
 
 ## Resources

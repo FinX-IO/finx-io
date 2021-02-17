@@ -301,6 +301,24 @@ const SideBar = props => {
   return (
     <StyledSidebar>
       <ListWrapper>
+<!--
+        {atTopLevel ? (
+          <StyledLink
+            isActive={atTopLevel}
+            style={{ marginBottom: '.25rem', display: 'inline-block', padding: !atTopLevel && '0px' }}
+            to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
+          >
+            Introduction
+          </StyledLink>
+        ) : (
+          <StyledLink
+            isActive={atTopLevel}
+            style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
+            to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
+          >
+            {'← Back'}
+          </StyledLink>
+        )} -->
         {atTopLevel ? (
               <StyledLink
                   isActive={atTopLevel}

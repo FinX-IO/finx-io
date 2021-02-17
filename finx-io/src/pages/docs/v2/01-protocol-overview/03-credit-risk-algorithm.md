@@ -3,7 +3,7 @@ title: Credit Risk Algorithm
 tags: protocol-overview, documentation
 ---
 
-![](./images/credit_risk_formula.jpg)
+![](./images/credit-risk-algorithm.png)
 
 The FINX protocol defines a Credit Risk Algorithm that sets the parameters of Credit Default to the ecosystem.
 

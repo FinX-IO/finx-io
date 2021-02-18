@@ -4,10 +4,10 @@ tags: protocol-overview, documentation
 related: '/docs/v2/core-concepts/pools'
 ---
 
-![](./images/pools.jpg)
+![](./images/pools.png)
 
-FINX Protocol defines Credit Risk Pools that are extension of Loan Pools to add a tokenized risk transfer mechanism and that
-employ the Credit Risk Algorithm to manage downside risk.
+FINX Protocol defines Credit Risk Pools that are extensions of Collateralized Loan Pools by adding a tokenized risk
+transfer mechanism and the Credit Risk Algorithm to manage downside risk.
 
 Pool specifications will be published along with the source code and may be forked for use in creating custom counterparty
 arrangements
@@ -15,7 +15,7 @@ arrangements
 Pools can have the following characteristics and distinctions:
 - Maturity (perpetual, fixed maturity, optionality)
 - Interest Rate schedules (fixed, float, tied to benchmark, tiered, contingent)
-- Industry groupins
+- Industry groupings
 - Environmental, Societal, and Governance groupings
 
 ### Who is responsible for determining credit worthiness?

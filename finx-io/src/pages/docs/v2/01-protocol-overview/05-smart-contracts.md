@@ -24,15 +24,14 @@ for a debt obligation. It also contains logic to turn on the protocol charge.
 
 ## Pools
 
+The following are links to the underlying Pool design of Uniswap V2. FINX extends Uniswap V2 and industry standard 
+protocols. The links below describe the underlying protocols:
+
 <Link to='/docs/v2/smart-contracts/pool'>Pool Reference documentation</Link>
 <br />
 <Link to='/docs/v2/smart-contracts/pair'>Pair Reference documentation</Link>
 <br />
 <Link to='/docs/v2/smart-contracts/pair-erc-20'>Token Reference documentation (ERC-20)</Link>
-
-Pools are a collection of pairs (or sets) of tokens or other pools, against which 
-swaps are made. Swapping tokens between pools, with specific contractual rules, is what 
-creates the Token Flow.
 
 # Periphery
 

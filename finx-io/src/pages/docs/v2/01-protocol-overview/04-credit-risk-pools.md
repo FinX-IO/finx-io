@@ -10,7 +10,7 @@ FINX Protocol defines Credit Risk Pools that are extensions of Collateralized Lo
 transfer mechanism and the Credit Risk Algorithm to manage downside risk.
 
 Pool specifications will be published along with the source code and may be forked for use in creating custom counterparty
-arrangements
+arrangements.
 
 Pools can have the following characteristics and distinctions:
 - Maturity (perpetual, fixed maturity, optionality)

@@ -1,10 +1,11 @@
 ---
 title: Swaps
-subtitle: Learn about the core functionality of the uniswap protocol. Token Swaps.
+subtitle: Learn about the core functionality of the Uniswap protocol. Token Swaps.
 tags: swaps, documentation
 ---
+The following content is provided here for convenience, and is copied from Uniswap.org.
 
-![](/images/trade.jpg)
+![](./images/trade.jpg)
 
 # Introduction
 

@@ -23,8 +23,6 @@ const tagManagerArgs = {
 }
 
 TagManager.initialize(tagManagerArgs)
-const app = document.getElementById('app')
-ReactDOM.render(<Router routes={'test'}/>, app)
 
 const BGCard = styled.span`
   width: 100vw;
@@ -290,6 +288,8 @@ const IndexPage = props => {
     }
   `)
 
+  const app = document.getElementById('app')
+
   return (
     <Layout path={props.location.pathname}>
       <BGCard>
@@ -351,8 +351,9 @@ const IndexPage = props => {
         <ProductsSection data={data} props={props} />
       </StyledBody>
       <BG />
-    </Layout>
-  )
+    </Layout>,
+    ReactDOM.render(<Router routes={'test'}/>, app)
+)
 }
 
 export default IndexPage

@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -21,6 +22,8 @@ const tagManagerArgs = {
 }
 
 TagManager.initialize(tagManagerArgs)
+const app = document.getElementById('app')
+ReactDOM.render(<Router routes={routes} />, app)
 
 const BGCard = styled.span`
   width: 100vw;

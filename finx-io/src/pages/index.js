@@ -24,7 +24,7 @@ const tagManagerArgs = {
 
 TagManager.initialize(tagManagerArgs)
 const app = document.getElementById('app')
-ReactDOM.render(<Router routes={routes} />, app)
+ReactDOM.render(<Router routes={'test'}/>, app)
 
 const BGCard = styled.span`
   width: 100vw;

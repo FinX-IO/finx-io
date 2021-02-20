@@ -11,12 +11,13 @@ import ProtocolData from '../components/protocolData'
 
 import { useDarkMode } from '../contexts/Application'
 
+import '../components/react-ga'
 import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../components/utils'
 
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-53HFS7D'
+    gtmId: 'G-ZDTYBG3JCP'
 }
 
 TagManager.initialize(tagManagerArgs)

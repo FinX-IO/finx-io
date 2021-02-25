@@ -351,7 +351,7 @@ const IndexPage = props => {
         <ProductsSection data={data} props={props} />
       </StyledBody>
       <BG />
-    </Layout>,
+    </Layout>
     ReactDOM.render(<Router routes={'test'}/>, app)
 )
 }

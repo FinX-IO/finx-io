@@ -302,16 +302,12 @@ const IndexPage = props => {
             FINX is a 100% decentralized L2 protocol for a digitized world
           </StyledBodySubTitle>
           <StyledItemRow>
-            <Button
-              outlined
+            <a
               href="https://etherscan.io/address/0x137cd72c356593fb20c90bd83450b9854decffde"
-              as={Link}
               style={{
                 fontSize: '20px'
-              }}
-            >
-              FINX Contract on Etherscan.io
-            </Button>
+              }}>FINX contract on Etherscan.io
+              </a>
           </StyledItemRow>
         </StyledTitle>
       </StyledBody>

@@ -30,7 +30,7 @@ const StyledFooter = styled.footer`
   position: relative;
   padding: 0 4rem 4rem 4rem;
   font-family: 'GT Haptik Regular';
-  
+
   @media (max-width: 1155px) {
     display: block;
   }
@@ -141,7 +141,7 @@ const Footer = () => {
       <StyledSection>
         <StyledFooterSection>
           <EmailSection />
-          <p>©2020 FINX</p>
+          <p>©2021 FINX</p>
         </StyledFooterSection>
       </StyledSection>
     </StyledFooter>

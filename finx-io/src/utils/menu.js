@@ -4,7 +4,7 @@ const menu = [
     sublinks: [
       {
         name: 'Vehicle Digitization',
-        link: 'https://vehicles.finx.io/#/',
+        link: 'https://vehicles.finx.io/',
         description: 'Title, Registration, Insurance, Access and Payments'
       },
       {

@@ -5,10 +5,8 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../layouts'
 import SEO from '../components/seo'
-import BG from '../components/bg'
 import { Button } from '../components/button'
 import Wizard from '../components/wizard'
-import ProtocolData from '../components/protocolData'
 import { Router } from 'react-router-dom';
 
 import { useDarkMode } from '../contexts/Application'
@@ -19,7 +17,7 @@ import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../compone
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'G-ZDTYBG3JCP'
+    gtmId: 'none'
 }
 
 TagManager.initialize(tagManagerArgs)
@@ -292,68 +290,33 @@ const IndexPage = props => {
 
   return (
     <Layout path={props.location.pathname}>
-      <BGCard>
-        <CardNoise />
-        <CardBGImage isDark={isDark} />
-        <CardFade />
-      </BGCard>
       <SEO
-        title="Home"
+        title="FINX"
         path={props.location.pathname}
-        description={'A fully decentralized protocol for automated corporate liquidity'}
+        description={'A fully decentralized protocol for tokenized physical assets'}
       />
       <StyledBody>
         <StyledTitle>
-          <StyledBodyTitle>Corporate Debt Decentralized</StyledBodyTitle>
+          <StyledBodyTitle>Tokenized Physical Assets</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
-            Guaranteed 24/7 liquidity for corporations provided by millions of users.
+            FINX is a 100% decentralized L2 protocol for a digitized world
           </StyledBodySubTitle>
           <StyledItemRow>
             <Button
-              style={{
-                // background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
-                  // '#7A1C99' : '#D3FF7A'
-                background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
-                color: 'white',
-                fontSize: '20px'
-              }}
-              target="_blank"
-              // href="https://app.uniswap.org/"
-              href="https://app.finx.io/"
-            >
-              Use FINX App
-            </Button>
-            <Button
               outlined
-              to="/docs"
+              to="https://etherscan.io/address/0x137cd72c356593fb20c90bd83450b9854decffde"
               as={Link}
               style={{
                 fontSize: '20px'
               }}
             >
-              Documentation
-            </Button>
-            <Button
-              outlined
-              to="/faq"
-              as={Link}
-              style={{
-                fontSize: '20px'
-              }}
-            >
-              FAQ
+              FINX Contract on Etherscan.io
             </Button>
           </StyledItemRow>
         </StyledTitle>
-        <ProtocolData />
-
-        <DeveloperSection data={data} props={props} />
-        <ProductsSection data={data} props={props} />
       </StyledBody>
-      <BG />
     </Layout>
-    ReactDOM.render(<Router routes={'test'}/>, app)
-)
+  )
 }
 
 export default IndexPage
@@ -381,66 +344,3 @@ const StyledSectionTitle = styled.h1`
     text-align: left;
   }
 `
-
-const DeveloperSection = props => {
-  return (
-    <>
-      <StyledSectionTitle>A decentralized corporate finance ecosystem.</StyledSectionTitle>
-      <StyledBodySubText>
-        The FINX protocol empowers liquidity providers, corporations, ratings agencies and insurers
-        to participate in a financial marketplace that is open and accessible to all.
-      </StyledBodySubText>
-      <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
-    </>
-  )
-}
-
-const ProductsSection = props => {
-  return (
-    <>
-      <StyledSectionTitle>Smart Contracts for Providing Debt Capital to the Crypto Markets</StyledSectionTitle>
-      <StyledBodySubText>
-          We facilitate complex, large scale arrangements for Corporations that require Debt Pools.
-          Smart Contract Debt Pools are on Etheryeum 2, as ERC-20 Smart Contracts. This gives anyone access to the world of Decentralized Debt Capital.
-      </StyledBodySubText>
-      <StyledItemRow>
-        <StyledExternalLink href={'https://info.finx.io'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.info.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://app.finx.io'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.swap.childImageSharp.fluid} />
-        </StyledExternalLink>
-      </StyledItemRow>
-
-      <StyledSectionTitle>Open Source Debt Contracts</StyledSectionTitle>
-      <StyledBodySubText>
-        Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your Corporate \
-          Finance Decentralized Application with billions in liquidity and access to high rewards.
-      </StyledBodySubText>
-      <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
-        <Wizard />
-      </StyledSectionFlex>
-
-      <StyledSectionTitle>A global community.</StyledSectionTitle>
-      <StyledBodySubText>
-        Learn more about FINX, chat with the team, others in the community, and have your say in shaping the future
-        of the FINX protocol.
-      </StyledBodySubText>
-      <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/FinX_io'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://finx.io/docs/v2/governance/'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.discourse.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://www.reddit.com/r/Uniswap'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
-        </StyledExternalLink>
-      </StyledItemRow>
-    </>
-  )
-}

@@ -302,21 +302,21 @@ const SideBar = props => {
     <StyledSidebar>
       <ListWrapper>
         {atTopLevel ? (
-          <StyledLink
-            isActive={atTopLevel}
-            style={{ marginBottom: '.25rem', display: 'inline-block', padding: !atTopLevel && '0px' }}
-            to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
-          >
-            Introduction
-          </StyledLink>
-        ) : (
-          <StyledLink
-            isActive={atTopLevel}
-            style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
-            to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
-          >
-            {'← Back'}
-          </StyledLink>
+              <StyledLink
+                  isActive={atTopLevel}
+                  style={{ marginBottom: '.25rem', display: 'inline-block', padding: !atTopLevel && '0px' }}
+                  to={`/docs/`}
+              >
+                  Introduction
+              </StyledLink>
+          ) : (
+              <StyledLink
+                  isActive={atTopLevel}
+                  style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
+                  to={`/docs/`}
+              >
+                  {'← Back'}
+              </StyledLink>
         )}
         {navData.edges
           .filter(({ node }) => {

@@ -2,8 +2,9 @@
 title: Pools
 tags: pools, documentation
 ---
+The following content is provided here for convenience, and is the product of Uniswap.org.
 
-![](images/anatomy.jpg)
+![](./images/anatomy.jpg)
 
 # Introduction
 

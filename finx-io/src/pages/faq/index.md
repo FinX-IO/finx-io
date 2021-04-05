@@ -25,14 +25,14 @@ intermediaries and unnecessary forms of rent extraction, allowing for fast, effi
 FINX fills the gap between "Pure Collateral Pools" and the traditional underwriting, ratings 
 and other financial services that are necessary for large-scale financing.
 
-If you want to dive into details check out the [docs](/docs/v2/).
+If you want to dive into details check out the [docs](/docs/).
 
 # When will FINX be Decentralized?
 
 The contracts will be published on May 1 2021 once audits and security testing is complete.
 
-FINX Governance Tokens are available for pre-trading sale starting February 15 2021 and will last 
-4 weeks to March 15 2021.
+FINX Governance Tokens are available for pre-trading sale starting February 21 2021 and will last 
+4 weeks to March 20 2021.
 
 # When will FINX Governance Tokens be available in Uniswap V2 Liquidity Pools?
 

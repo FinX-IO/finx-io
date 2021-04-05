@@ -5,7 +5,7 @@ tags: protocol-overview, documentation
 
 ![](./images/FINX_How_it_works.jpg)
 
-FINX is an automated liquidity protocol that is powered by a <Link to="/docs/v2/protocol-overview/glossary/#credit-risk-formula">credit risk formula</Link> 
+FINX is an automated liquidity protocol that is powered by a <Link to="/docs/v2/protocol-overview/glossary/#credit-risk-algorithm">credit risk formula</Link> 
 and implemented in a system of non-upgradeable smart contracts on the [Ethereum](https://ethereum.org/) blockchain.
 
 The primary purpose of FINX is to provide an Ethereum corporate credit facility as an extension to Collateralized Loan 

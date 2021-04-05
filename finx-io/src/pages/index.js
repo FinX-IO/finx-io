@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -8,15 +9,17 @@ import BG from '../components/bg'
 import { Button } from '../components/button'
 import Wizard from '../components/wizard'
 import ProtocolData from '../components/protocolData'
+import { Router } from 'react-router-dom';
 
 import { useDarkMode } from '../contexts/Application'
 
+import '../components/react-ga'
 import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../components/utils'
 
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-53HFS7D'
+    gtmId: 'G-ZDTYBG3JCP'
 }
 
 TagManager.initialize(tagManagerArgs)
@@ -285,6 +288,8 @@ const IndexPage = props => {
     }
   `)
 
+  const app = document.getElementById('app')
+
   return (
     <Layout path={props.location.pathname}>
       <BGCard>
@@ -347,7 +352,8 @@ const IndexPage = props => {
       </StyledBody>
       <BG />
     </Layout>
-  )
+    ReactDOM.render(<Router routes={'test'}/>, app)
+)
 }
 
 export default IndexPage
@@ -398,28 +404,19 @@ const ProductsSection = props => {
           Smart Contract Debt Pools are on Etheryeum 2, as ERC-20 Smart Contracts. This gives anyone access to the world of Decentralized Debt Capital.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.socks.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://info.uniswap.org'} target="_blank">
+        <StyledExternalLink href={'https://info.finx.io'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.info.childImageSharp.fluid} />
         </StyledExternalLink>
         <StyledExternalLink href={'https://app.finx.io'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.swap.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://tokenlists.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.tokenlists.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://sybil.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.sybil.childImageSharp.fluid} />
-        </StyledExternalLink>
       </StyledItemRow>
 
-      <StyledSectionTitle>Superpowers for Corporate DeFi Teams.</StyledSectionTitle>
+      <StyledSectionTitle>Open Source Debt Contracts</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your Corporate Finance
-        with thousands of tokens and billions in liquidity.
+        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your Corporate \
+          Finance Decentralized Application with billions in liquidity and access to high rewards.
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
         <Wizard />
@@ -428,16 +425,16 @@ const ProductsSection = props => {
       <StyledSectionTitle>A global community.</StyledSectionTitle>
       <StyledBodySubText>
         Learn more about FINX, chat with the team, others in the community, and have your say in shaping the future
-        of the Uniswap protocol.
+        of the FINX protocol.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://twitter.com/FinX_io'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://gov.uniswap.org/'} target="_blank">
+        <StyledExternalLink href={'https://finx.io/docs/v2/governance/'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discourse.childImageSharp.fluid} />
         </StyledExternalLink>
         <StyledExternalLink href={'https://www.reddit.com/r/Uniswap'} target="_blank">

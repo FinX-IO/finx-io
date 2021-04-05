@@ -2,6 +2,7 @@
 title: Flash Swaps
 tags: flash-swaps, documentation
 ---
+The following content is provided here for convenience, and is the product of Uniswap.org.
 
 Uniswap flash swaps allow you to withdraw up to the full reserves of any ERC20 token on Uniswap and execute arbitrary logic at no upfront cost, provided that by the end of the transaction you either:
 

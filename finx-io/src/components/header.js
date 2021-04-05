@@ -7,9 +7,9 @@ import styled from 'styled-components'
 import Menu from './menu'
 
 // import Uni from '../images/finx_logo_white.svg'
-import Uni from '../images/uni.inline.svg'
-import MenuIcon from '../images/menu.inline.svg'
-import CloseIcon from '../images/x.inline.svg'
+import Uni from '../images/FINX_LOGO.svg'
+import MenuIcon from '../images/FINX_LOGO.svg'
+import CloseIcon from '../images/FINX_LOGO.svg'
 
 import { Sun, Moon } from 'react-feather'
 import { useDarkMode } from '../contexts/Application'
@@ -273,20 +273,6 @@ const Header = props => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </StyledButton>
         </HideSmall>
-
-        {props.path !== undefined && (
-          <StyledTradeLink
-            style={{
-              background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
-              color: 'white'
-            }}
-            target="_blank"
-            // href="https://app.uniswap.org/"
-            href="https://app.finx.io/"
-          >
-            Use FINX
-          </StyledTradeLink>
-        )}
       </StyledNav>
     </StyledHeader>
   )

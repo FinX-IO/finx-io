@@ -273,7 +273,7 @@ const Header = props => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </StyledButton>
         </HideSmall>
-        <BG />
+        &nbsp;&nbsp;&nbsp;
       </StyledNav>
     </StyledHeader>
   )

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import Layout from '../layouts'
 import SEO from '../components/seo'
 
@@ -108,96 +107,6 @@ const StyledItemRow = styled.nav`
 `
 
 const IndexPage = props => {
-  const isDark = useDarkMode()
-
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          siteUrl
-        }
-      }
-      newYear: file(relativePath: { eq: "newyear.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      banner: file(relativePath: { eq: "Banner.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      swap: file(relativePath: { eq: "swap.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      info: file(relativePath: { eq: "info.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      socks: file(relativePath: { eq: "socks.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      sybil: file(relativePath: { eq: "sybil.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      tokenlists: file(relativePath: { eq: "tokenlists.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      discord: file(relativePath: { eq: "discord.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      twitter: file(relativePath: { eq: "twitter.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      reddit: file(relativePath: { eq: "reddit.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      discourse: file(relativePath: { eq: "discourse.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  const app = document.getElementById('app')
 
   return (
     <Layout path={props.location.pathname}>
@@ -227,27 +136,3 @@ const IndexPage = props => {
 }
 
 export default IndexPage
-
-const StyledSectionTitle = styled.h1`
-  font-size: 48px;
-  white-space: wrap;
-  overflow-wrap: normal;
-  max-width: 900px;
-  text-align: center;
-  font-family: 'GT Haptik Regular';
-  margin-top: 10rem;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    max-width: 600px;
-    margin-top: 4rem;
-  }
-  @media (max-width: 640px) {
-    width: 100%;
-    font-weight: 400;
-    margin-top: 4rem;
-    text-align: left;
-  }
-`

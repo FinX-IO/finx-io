@@ -7,9 +7,9 @@ import styled from 'styled-components'
 import Menu from './menu'
 
 // import Uni from '../images/finx_logo_white.svg'
-import Uni from '../images/FINX_LOGO.png'
-import MenuIcon from '../images/FINX_LOGO.png'
-import CloseIcon from '../images/FINX_LOGO.png'
+import Uni from '../images/uni.inline.svg'
+import MenuIcon from '../images/menu.inline.svg'
+import CloseIcon from '../images/x.inline.svg'
 
 import { Sun, Moon } from 'react-feather'
 import { useDarkMode } from '../contexts/Application'

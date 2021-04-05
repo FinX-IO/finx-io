@@ -1,18 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../layouts'
 import SEO from '../components/seo'
-import { Button } from '../components/button'
-import Wizard from '../components/wizard'
-import { Router } from 'react-router-dom';
 
 import { useDarkMode } from '../contexts/Application'
 
 import '../components/react-ga'
-import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../components/utils'
 
 import TagManager from 'react-gtm-module'
 
@@ -21,23 +16,6 @@ const tagManagerArgs = {
 }
 
 TagManager.initialize(tagManagerArgs)
-
-const BGCard = styled.span`
-  width: 100vw;
-  height: 100vh;
-  /* max-width: 1200px; */
-  max-height: 1220px;
-  user-select: none;
-  background-repeat: no-repeat;
-  background: ${({ theme }) => theme.heroBG};
-  background-size: contain;
-  opacity: 0.2;
-  @media (max-width: 960px) {
-    width: 100vw;
-    height: 100vh;
-    max-height: 1220px;
-  }
-`
 
 const StyledBody = styled.div`
   position: relative;
@@ -99,73 +77,6 @@ const StyledBodyTitle = styled.h1`
 const StyledBodySubTitle = styled.h2`
   @media (max-width: 640px) {
     text-align: left;
-  }
-`
-
-const StyledBodySubText = styled.h3`
-  max-width: 960px;
-  text-align: center;
-  line-height: 160%;
-  @media (max-width: 640px) {
-    text-align: left;
-  }
-`
-
-const StyledBannerImage = styled(Img)`
-  width: 100%;
-  height: 100%;
-  min-width: 260px;
-  max-width: 720px;
-  background-color: none;
-  margin-top: 1rem;
-  border-radius: 0px;
-  box-shadow: ${({ theme }) => theme.shadows.huge};
-  @media (max-width: 960px) {
-    min-width: unset;
-  }
-`
-
-const StyledProductImage = styled(Img)`
-  width: 100%;
-  height: 100%;
-  min-width: 220px;
-  max-width: 220px;
-  background-color: none;
-  border-radius: 0px;
-  box-shadow: ${({ theme }) => theme.shadows.huge};
-
-  /* @media (max-width: 960px) {
-    min-width: 120px;
-    max-width: 120px;
-  } */
-`
-
-const StyledSectionFlex = styled.div`
-  padding: 4rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  @media (max-width: 1024px) {
-    padding: 1rem;
-    margin-top: 0rem;
-    flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
-  }
-
-  @media (max-width: 960px) {
-    padding: 1rem;
-    margin-top: 0rem;
-    width: 100%;
-    max-width: 450px;
-  }
-
-  h2 {
-    margin-bottom: 0.5rem;
-  }
-  p {
-    margin-bottom: 0.5rem;
   }
 `
 

@@ -304,7 +304,7 @@ const IndexPage = props => {
           <StyledItemRow>
             <Button
               outlined
-              to="https://etherscan.io/address/0x137cd72c356593fb20c90bd83450b9854decffde"
+              href="https://etherscan.io/address/0x137cd72c356593fb20c90bd83450b9854decffde"
               as={Link}
               style={{
                 fontSize: '20px'
